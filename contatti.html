@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | Fondazione Boscacci ETS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="icon" href="assets/dynames.png" type="image/png">
+    <style>
+        .contact-form {
+            background: var(--optical-white);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent);
+        }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; color: var(--night-blue); font-weight: 600; font-family: 'Montserrat'; font-size: 0.9rem; }
+        .form-control {
+            width: 100%; padding: 0.8rem 1rem; border: 1px solid #cbd5e1; border-radius: 4px;
+            font-family: inherit; font-size: 1rem; color: var(--text-primary); transition: var(--transition);
+        }
+        .form-control:focus { outline: none; border-color: var(--gold-accent); box-shadow: 0 0 0 3px rgba(184, 147, 90, 0.2); }
+        textarea.form-control { resize: vertical; min-height: 150px; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html">
+                    <h1><img src="assets/logo_grafico.png" alt="Logo" style="height: 35px; width: auto; margin-right: 10px; vertical-align: text-bottom;">Fondazione Boscacci ETS</h1>
+                    <p>Ente del Terzo Settore</p>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="desktop-nav" id="mainNav">
+                <a href="index.html">Chi Siamo</a>
+                <a href="index.html#cosa-facciamo">Cosa Facciamo</a>
+                <a href="eventi.html">Eventi</a>
+                <a href="progetti.html">Progetti</a>
+                <a href="contatti.html" class="active">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Contattaci</h1>
+            <p>"Siamo aperti al dialogo e alla collaborazione tra enti, ricercatori e cittadini."</p>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="grid-2">
+            <div>
+                <h3 style="font-size: 1.8rem; color: var(--night-blue); margin-bottom: 1rem;">Sede Operativa</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
+                    Per informazioni, proposte di partnership e adesione ai tavoli tecnici o per segnalare collaborazioni in ambito medico-ricercativo, non esitare a contattarci compilando il modulo.
+                </p>
+                
+                <h4 style="color: var(--gold-accent); font-family: 'Montserrat'; font-size: 1.1rem; margin-bottom: 0.5rem; text-transform: uppercase;">Ufficio Stampa & Relazioni Esterne</h4>
+                <p style="color: var(--text-primary); margin-bottom: 1.5rem;">
+                    <strong>Dott.ssa Elisabetta Panico</strong><br>
+                    <a href="mailto:press@boscacci.it" style="color: var(--accent); text-decoration: none; font-weight: 500;">press@boscacci.it</a>
+                </p>
+
+                <h4 style="color: var(--gold-accent); font-family: 'Montserrat'; font-size: 1.1rem; margin-bottom: 0.5rem; text-transform: uppercase;">Affari Pubblici e Istituzionali</h4>
+                <p style="color: var(--text-primary); margin-bottom: 1.5rem;">
+                    <strong>Emanuele Peconi</strong><br>
+                    <a href="mailto:istituzioni@boscacci.it" style="color: var(--accent); text-decoration: none; font-weight: 500;">istituzioni@boscacci.it</a>
+                </p>
+
+                <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
+                    <p style="font-size: 0.85rem; color: var(--slate-grey); font-family: 'Montserrat';">
+                        Iscrizione Registro Unico Nazionale del Terzo Settore (RUNTS).<br>
+                        Regione Lazio / Presidenza Nazionale.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <form class="contact-form" action="#" method="get" onsubmit="event.preventDefault(); alert('Grazie per la preferenza! La Fondazione risponderà al più presto.');">
+                    <h3 style="font-size: 1.5rem; color: var(--night-blue); margin-bottom: 1.5rem;">Modulo di Contatto</h3>
+                    
+                    <div class="form-group">
+                        <label for="name">Nome / Ente di Riferimento</label>
+                        <input type="text" id="name" class="form-control" placeholder="Es. Mario Rossi / Università..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Indirizzo Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="es. mario.rossi@email.it" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Oggetto</label>
+                        <select id="subject" class="form-control" required>
+                            <option value="">-- Seleziona il motivo --</option>
+                            <option value="press">Richiesta Stampa / Interviste</option>
+                            <option value="event">Invito o Organizzazione Eventi</option>
+                            <option value="research">Proposta di Ricerca Scientifica</option>
+                            <option value="partnership">Sviluppo Partnership / Sponsorship</option>
+                            <option value="other">Altro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Messaggio</label>
+                        <textarea id="message" class="form-control" placeholder="Scrivi qui i dettagli della tua richiesta..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Invia Richiesta</button>
+                    <p style="font-size: 0.75rem; color: var(--text-light); margin-top: 1rem; text-align: center;">Inviando il modulo acconsenti al trattamento dei dati personali in base alle normative europee (GDPR).</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo"><img src="assets/logo_esteso.png" alt="Fondazione Boscacci ETS" style="height: 60px;"></div>
+            <p>Fondazione Boscacci ETS</p>
+            <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 0.8rem;">&copy; 2026 Fondazione Boscacci ETS. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

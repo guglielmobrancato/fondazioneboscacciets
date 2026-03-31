@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetti | Fondazione Boscacci ETS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="icon" href="assets/dynames.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html">
+                    <h1><img src="assets/logo_grafico.png" alt="Logo" style="height: 35px; width: auto; margin-right: 10px; vertical-align: text-bottom;">Fondazione Boscacci ETS</h1>
+                    <p>Ente del Terzo Settore</p>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="desktop-nav" id="mainNav">
+                <a href="index.html">Chi Siamo</a>
+                <a href="index.html#cosa-facciamo">Cosa Facciamo</a>
+                <a href="eventi.html">Eventi</a>
+                <a href="progetti.html" class="active">Progetti</a>
+                <a href="contatti.html">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>I Nostri Progetti</h1>
+            <p>"Sistemi e network per la promozione e la governance."</p>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="grid-3">
+
+            <!-- DYNAMES -->
+            <div class="card" style="display: flex; flex-direction: column; text-align: center;">
+                <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <img src="assets/dynames.png" alt="DYNAMES" style="max-height: 100%;">
+                </div>
+                <h3>DYNAMES</h3>
+                <p style="flex-grow: 1;">Piattaforma e rivista di governance di forze e sistemi. Supporto per l'indirizzo strategico, le geopolitiche e l'OSINT applicata per leader istituzionali.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="https://dynames.it/" target="_blank" class="btn" style="width: 100%;">Visita il Sito</a>
+                </div>
+            </div>
+
+            <!-- MENTHORAI -->
+            <div class="card" style="display: flex; flex-direction: column; text-align: center;">
+                <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <img src="assets/menthorai.png" alt="Menthor AI" style="max-height: 100%;">
+                </div>
+                <h3>Menthor AI</h3>
+                <p style="flex-grow: 1;">Sviluppo di logiche di Intelligenza Artificiale per l'efficientamento, l'analisi predittiva e l'ottimizzazione strategica delle organizzazioni e del comparto medico.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="https://www.menthorai.ai/" target="_blank" class="btn" style="width: 100%;">Visita il Sito</a>
+                </div>
+            </div>
+
+            <!-- CLINORYX ACADEMY -->
+            <div class="card" style="display: flex; flex-direction: column; text-align: center; border-color: var(--slate-grey);">
+                <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <!-- Placeholder logo -->
+                    <span style="font-size: 2.5rem; font-weight: bold; color: var(--accent); font-family: 'Playfair Display';">Clinoryx</span>
+                </div>
+                <h3>Clinoryx Academy <br><span style="font-size: 0.8rem; color: #d97706; background: rgba(217,119,6,0.1); padding: 0.2rem 0.5rem; border-radius: 4px; display: inline-block; margin-top: 0.5rem; text-transform: uppercase; font-family: 'Roboto';">Coming Soon</span></h3>
+                <p style="flex-grow: 1;">Ente di Alta Formazione per accreditamento continuo. Erogazione di corsi ECM specializzati nel settore sanitario e del management dell'health care.</p>
+                <div style="margin-top: 2rem;">
+                    <button disabled class="btn" style="width: 100%; background: var(--text-light); color: var(--text-secondary); cursor: not-allowed; opacity: 0.8;">In Sviluppo</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo"><img src="assets/logo_esteso.png" alt="Fondazione Boscacci ETS" style="height: 60px;"></div>
+            <p>Fondazione Boscacci ETS</p>
+            <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 0.8rem;">&copy; 2026 Fondazione Boscacci ETS. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
