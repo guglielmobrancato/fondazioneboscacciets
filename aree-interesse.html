@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aree di Interesse | Fondazione Boscacci ETS</title>
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="icon" href="assets/dynames.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html" style="display: flex; align-items: center;">
+                    <img src="assets/logo_esteso.png" alt="Fondazione Boscacci ETS" style="height: 55px; width: auto;">
+                </a>
+            </div>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+
+            <nav class="desktop-nav" id="mainNav">
+                <a href="index.html">Chi Siamo</a>
+                <a href="aree-interesse.html" class="active">Aree di Interesse</a>
+                <a href="eventi.html">Eventi</a>
+                <a href="progetti.html">Progetti</a>
+                <a href="collaborare.html">Collaborare</a>
+                <a href="contatti.html">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-title" style="background: var(--night-blue); color: white; padding: 120px 0 60px;">
+        <div class="container text-center">
+            <h1 style="color: white; font-family: var(--font-heading); margin-bottom: 20px;">Aree di Interesse</h1>
+        </div>
+    </section>
+
+    <section class="container" style="margin-top: 4rem; margin-bottom: 4rem;">
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem;">
+            Le attività della Fondazione Boscacci ETS si articolano intorno a diversi ambiti di studio che rispecchiano le dinamiche strategiche fondamentali che incidono sul funzionamento dei sistemi politici, economici e sociali contemporanei.<br><br>
+            Questi ambiti costituiscono i principali campi in cui si esprimono le dinamiche che contribuiscono a definire e sostenere la stabilità delle comunità politiche nell'interesse collettivo.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            
+            <div class="card">
+                <h4 style="color: var(--gold-accent); margin-bottom: 1rem;">Governance e infrastrutture dei sistemi complessi</h4>
+                <p>Studio delle configurazioni istituzionali e delle infrastrutture, sia materiali sia immateriali, che supportano il funzionamento dei sistemi pubblici e delle economie contemporanee.</p>
+                <ul style="margin-top: 1rem; color: #555; padding-left: 1.2rem; font-weight: 500;">
+                    <li>Governance pubblica</li>
+                    <li>Engagement</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h4 style="color: var(--gold-accent); margin-bottom: 1rem;">Società, educazione e welfare</h4>
+                <p>Analisi approfondita dei processi sociali e delle politiche pubbliche che influenzano la coesione delle comunità e favoriscono il progresso e il benessere umano.</p>
+                <ul style="margin-top: 1rem; color: #555; padding-left: 1.2rem; font-weight: 500;">
+                    <li>Salute</li>
+                    <li>Welfare</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h4 style="color: var(--gold-accent); margin-bottom: 1rem;">Economia, industria e risorse strategiche</h4>
+                <p>Analisi delle strategie economiche e industriali che influenzano la capacità competitiva dei sistemi nazionali e l’amministrazione delle risorse strategiche.</p>
+                <ul style="margin-top: 1rem; color: #555; padding-left: 1.2rem; font-weight: 500;">
+                    <li>Economia</li>
+                    <li>Industria e produttività</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo"><img src="assets/logo_bianco.svg" alt="Fondazione Boscacci ETS" style="height: 120px;"></div>
+            <p>Fondazione Boscacci ETS</p>
+            <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 0.8rem;">&copy; 2026 Fondazione Boscacci ETS. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

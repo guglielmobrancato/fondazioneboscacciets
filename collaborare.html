@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborare con Fondazione Boscacci ETS</title>
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="icon" href="assets/dynames.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html" style="display: flex; align-items: center;">
+                    <img src="assets/logo_esteso.png" alt="Fondazione Boscacci ETS" style="height: 55px; width: auto;">
+                </a>
+            </div>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+
+            <nav class="desktop-nav" id="mainNav">
+                <a href="index.html">Chi Siamo</a>
+                <a href="aree-interesse.html">Aree di Interesse</a>
+                <a href="eventi.html">Eventi</a>
+                <a href="progetti.html">Progetti</a>
+                <a href="collaborare.html" class="active">Collaborare</a>
+                <a href="contatti.html">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-title" style="background: var(--night-blue); color: white; padding: 120px 0 60px;">
+        <div class="container text-center">
+            <h1 style="color: white; font-family: var(--font-heading); margin-bottom: 20px;">Collaborare con Fondazione Boscacci ETS</h1>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="container" style="margin-top: 4rem; margin-bottom: 4rem;">
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem;">
+            La Fondazione è un contenitore a vocazione scientifica dedicata allo studio delle dinamiche strategiche che influenzano la stabilità e lo sviluppo delle comunità politiche, delle istituzioni e dei sistemi economici contemporanei. La fondazione promuove un approccio interdisciplinare e favorisce il confronto tra studiosi, professionisti, ricercatori e operatori istituzionali provenienti da ambiti diversi. La comunità  scientifica di fondazione si fonda sulla partecipazione volontaria e non retribuita dei suoi membri, che contribuiscono con analisi, articoli e studi all’approfondimento dei temi trattati.
+        </p>
+
+        <h3 style="margin-bottom: 2rem; color: var(--night-blue);">La collaborazione con fondazione si articola in tre modalità principali:</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="card">
+                <h4 style="color: var(--gold-accent); margin-bottom: 1rem;">Senior Fellow</h4>
+                <p>I Senior Fellow sono professionisti, studiosi ed esperti con consolidata esperienza nei rispettivi ambiti disciplinari o professionali. Possono provenire dal mondo accademico, istituzionale, industriale o delle professioni.</p>
+                <p style="margin-top: 1rem;">Contribuiscono allo sviluppo delle attività scientifiche e relazionali attraverso analisi, articoli, contributi di ricerca e partecipazione a eventi e iniziative pubbliche.</p>
+                <p style="margin-top: 1rem;">La qualifica rappresenta un riconoscimento del contributo intellettuale e professionale apportato alla crescita della comunità scientifica della fondazione. La nomina avviene su invito della Direzione.</p>
+            </div>
+            
+            <div class="card">
+                <h4 style="color: var(--gold-accent); margin-bottom: 1rem;">Junior Fellow</h4>
+                <p>I Junior Fellow sono giovani ricercatori, dottorandi, studenti magistrali o giovani professionisti interessati a contribuire alla produzione di analisi e contenuti.</p>
+                <p style="margin-top: 1rem;">La partecipazione rappresenta una opportunità di confronto e crescita in una comunità interdisciplinare impegnata nello studio delle dinamiche strategiche contemporanee attraverso articoli e analisi.</p>
+                <p style="margin-top: 1rem;">L’accesso avviene su candidatura spontanea. La candidatura può includere:<br>
+                &bull; curriculum vitae<br>
+                &bull; descrizione degli ambiti di ricerca<br>
+                &bull; eventuali pubblicazioni già realizzate.</p>
+            </div>
+            
+            <div class="card">
+                <h4 style="color: var(--gold-accent); margin-bottom: 1rem;">Contributors</h4>
+                <p>I Contributors sono autori ed esperti che collaborano con la Fondazione attraverso contributi occasionali.</p>
+                <p style="margin-top: 1rem;">Possono essere studiosi, professionisti, giornalisti, funzionari pubblici o ricercatori interessati a partecipare al dibattito promosso dalla piattaforma.</p>
+                <p style="margin-top: 1rem;">I Contributors partecipano con articoli, analisi o interventi su specifici temi di interesse.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo"><img src="assets/logo_bianco.svg" alt="Fondazione Boscacci ETS" style="height: 120px;"></div>
+            <p>Fondazione Boscacci ETS</p>
+            <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 0.8rem;">&copy; 2026 Fondazione Boscacci ETS. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -27,9 +27,10 @@
 
             <nav class="desktop-nav" id="mainNav">
                 <a href="index.html" class="active">Chi Siamo</a>
-                <a href="index.html#cosa-facciamo">Cosa Facciamo</a>
+                <a href="aree-interesse.html">Aree di Interesse</a>
                 <a href="eventi.html">Eventi</a>
                 <a href="progetti.html">Progetti</a>
+                <a href="collaborare.html">Collaborare</a>
                 <a href="contatti.html">Contatti</a>
             </nav>
         </div>
@@ -119,34 +120,81 @@
     </section>
 
     <!-- PARTNERS -->
-    <section id="partnership" style="background: var(--night-blue); color: var(--optical-white);">
+    <section id="partnership" style="background: var(--night-blue); color: var(--optical-white); padding: 5rem 0;">
         <div class="container" style="text-align: center;">
-            <h2 class="section-title" style="color: var(--optical-white);">Partnership & Network</h2>
+            <h2 class="section-title" style="color: var(--optical-white); margin-bottom: 4rem;">Partnership & Network</h2>
             
-            <div style="display: flex; justify-content: center; align-items: stretch; gap: 4rem; flex-wrap: wrap; margin-top: 3rem;">
-                <!-- Ferpi rimosso -->
-
-                <div style="max-width: 200px; text-align: center;">
-                    <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; background: #fff; padding: 10px; border-radius: 8px;">
-                        <img src="assets/loghi partner/delpitte.png" alt="Deloitte Logo" style="max-height: 100%; max-width: 100%;">
-                    </div>
-                    <p style="font-size: 0.8rem; color: var(--text-light); text-align: left; margin-top: 1rem;">Consulenza Strategica e Servizi Professionali</p>
+            <!-- 4 Categories Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <div>
+                    <h3 style="font-size: 1.25rem; font-family: var(--font-heading); margin-bottom: 1rem; color: #fff;">Accademia</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-light); line-height: 1.6;">Ricerca scientifica, validazione metodologica e high-education.</p>
                 </div>
-
-                <div style="max-width: 200px; text-align: center;">
-                    <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; background: #fff; padding: 10px; border-radius: 8px;">
-                        <img src="assets/loghi partner/head logo.png" alt="HEAD UniMi Logo" style="max-height: 100%; max-width: 100%; filter: brightness(0);">
-                    </div>
-                    <p style="font-size: 0.8rem; color: var(--text-light); text-align: left; margin-top: 1rem;">HEAD: Centro di Ricerche e Alta Formazione dell'Univ. degli Studi di Milano (Health Administration).</p>
+                <div>
+                    <h3 style="font-size: 1.25rem; font-family: var(--font-heading); margin-bottom: 1rem; color: #fff;">Istituzioni</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-light); line-height: 1.6;">Dialogo costante per la promozione di policy e governance efficace.</p>
                 </div>
-
-                <div style="max-width: 250px; text-align: center;">
-                    <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; background: #fff; padding: 5px; border-radius: 8px;">
-                        <img src="assets/loghi partner/luiss scuola di giornalismo.png" alt="LUISS Logo" style="max-height: 100%; max-width: 100%; transform: scale(1.3);">
-                    </div>
-                    <p style="font-size: 0.8rem; color: var(--text-light); text-align: left; margin-top: 1rem;">Scuola di Giornalismo</p>
+                <div>
+                    <h3 style="font-size: 1.25rem; font-family: var(--font-heading); margin-bottom: 1rem; color: #fff;">Industria</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-light); line-height: 1.6;">Integrazione tecnologica e sicurezza del comparto produttivo.</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.25rem; font-family: var(--font-heading); margin-bottom: 1rem; color: #fff;">Corpi Intermedi</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-light); line-height: 1.6;">Coesione sociale e trasmissione della cultura della sicurezza.</p>
                 </div>
             </div>
+
+            <!-- Separator Line -->
+            <hr style="border-color: rgba(255,255,255,0.05); margin-bottom: 4rem;">
+
+            <!-- 4 Logos -->
+            <div style="display: flex; justify-content: center; align-items: flex-start; gap: 3rem; flex-wrap: wrap;">
+                
+                <div style="width: 220px; text-align: center;">
+                    <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <img src="assets/loghi partner/marte_logo.png" alt="Marte Studios" style="max-height: 120%; max-width: 150%; transform: scale(1.5);">
+                    </div>
+                    <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.3rem; font-family: var(--font-heading);">Marte Studios</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-light);">Partner Multimediale</p>
+                </div>
+
+                <div style="width: 220px; text-align: center;">
+                    <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <img src="assets/loghi partner/delpitte.png" alt="Deloitte" style="max-height: 80%; max-width: 100%; filter: brightness(0) invert(1);">
+                    </div>
+                    <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.3rem; font-family: var(--font-heading);">Deloitte</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-light);">Consulenza Strategica e Servizi Professionali</p>
+                </div>
+
+                <div style="width: 220px; text-align: center;">
+                    <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <img src="assets/loghi partner/luiss scuola di giornalismo.png" alt="LUISS" style="max-height: 90%; max-width: 100%; transform: scale(1.2); filter: brightness(0) invert(1);">
+                    </div>
+                    <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.3rem; font-family: var(--font-heading);">LUISS Scuola di Giornalismo</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-light);">Partner</p>
+                </div>
+                
+                <div style="width: 220px; text-align: center;">
+                    <div style="height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <img src="assets/loghi partner/head logo.png" alt="HEAD UniMi" style="max-height: 80%; max-width: 100%; filter: brightness(0) invert(1);">
+                    </div>
+                    <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.3rem; font-family: var(--font-heading);">HEAD UniMi</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-light);">Ricerca e Alta Formazione</p>
+                </div>
+
+            </div>
+
+            <!-- FERPI -->
+            <div style="display: flex; justify-content: center; margin-top: 5rem;">
+                <div style="width: 450px; text-align: center;">
+                    <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <img src="assets/loghi partner/ferpi.jpeg" alt="FERPI" style="max-height: 100%; max-width: 100%; mix-blend-mode: screen; filter: grayscale(1) invert(1) contrast(1.2);">
+                    </div>
+                    <h4 style="font-size: 1.1rem; color: #fff; margin-bottom: 0.3rem; font-family: var(--font-heading); letter-spacing: 0.5px;">FERPI - Federazione Relazioni Pubbliche Italiana</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-light);">Socio Professionista</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
